@@ -70,7 +70,22 @@ include "partials/header.php";
     </tbody>
 
 </table>
+<table>
+    <td class="p-3 flex gap-2">
 
+    <a href="modifier.php?id=<?= $e['id'] ?>"
+       class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">
+        Modifier
+    </a>
+
+    <a href="supprimer.php?id=<?= $e['id'] ?>"
+       onclick="return confirm('Supprimer cet étudiant ?')"
+       class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">
+        Supprimer
+    </a>
+
+</td>
+</table>
 <?php
 
 include "partials/footer.php";
