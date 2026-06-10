@@ -1,7 +1,7 @@
 <?php
 
 require "config/database.php";
-require "classes/Etudiant.php";
+require "classes/etudiant.php";
 
 $etudiant = new Etudiant($pdo);
 
